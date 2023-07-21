@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bills management</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="phonenumber">PhoneNumber</string>
+    <string name="password">Password</string>
+</resources>

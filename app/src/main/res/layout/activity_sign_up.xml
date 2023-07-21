@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SignUpActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="118dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="172dp"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFirstName"
+        android:layout_width="353dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="First name"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSecondName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilFirstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSecondName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Second name"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilSecondName"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="274dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail"
+        tools:layout_editor_absoluteX="29dp"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="602dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="158dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/baseline_person_24"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="558dp"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="557dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPhoneNumber"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="602dp"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phonenumber"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="384dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPassword"
+        android:layout_width="314dp"
+        android:layout_height="62dp"
+        android:hint="@string/password"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="451dp"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/tilEmail"
+        tools:layout_editor_absoluteX="185dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
