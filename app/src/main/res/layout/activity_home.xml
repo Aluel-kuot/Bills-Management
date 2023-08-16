@@ -4,41 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CCE2BF"
+    android:background="#939D83"
     tools:context=".UI.Home">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="185dp"
-        android:layout_marginEnd="80dp"
-        android:text="B-Manage  got you covered"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnvHome"
+        android:layout_width="395dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginEnd="8dp"
+        android:background="#EDE8E8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/money" />
+        app:menu="@menu/bottom_nav_menu" />
 
-    <Button
-        android:id="@+id/btnGetStarted"
-        android:layout_width="157dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="7dp"
-        android:background="#A0E1A3"
-        android:shadowColor="#3F51B5"
-        android:text="Get Started"
-        android:textColor="#061B06"
-        android:textColorHighlight="#E91E63"
-        android:textColorHint="#9C27B0"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/FCVHome"
+        android:name="com.aluel.billsmanagement.UI.SummaryFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="731dp"
+        app:layout_constraintBottom_toTopOf="@id/bnvHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_summary" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

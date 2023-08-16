@@ -5,4 +5,10 @@
     <string name="sign_up">Sign Up</string>
     <string name="phonenumber">PhoneNumber</string>
     <string name="password">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="summary" />
+    <string name="upcoming" />
+    <string name="paid" />
+    <string name="setting" />
 </resources>
